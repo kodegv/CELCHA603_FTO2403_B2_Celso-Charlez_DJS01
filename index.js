@@ -13,6 +13,9 @@ const initialDistanceKm = 0; // initial distance (km)
 const remainingFuelKg = 5000; // remaining fuel (kg)
 const fuelBurnRateKgs = 0.5; // fuel burn rate (kg/s)
 
+// Convert velocity from km/h to m/s for calculation
+const initialVelocityMs = initialVelocityKmH * (1000 / 3600);
+
 
 const d2 = d + (vel*time) //calcultes new distance
 const rf = fbr*time //calculates remaining fuel
