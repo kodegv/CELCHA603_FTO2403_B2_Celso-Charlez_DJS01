@@ -16,6 +16,14 @@ const fuelBurnRateKgs = 0.5; // fuel burn rate (kg/s)
 // Convert velocity from km/h to m/s for calculation
 const initialVelocityMs = initialVelocityKmH * (1000 / 3600);
 
+// Function to calculate new velocity
+function calcNewVelocity(velocity, acceleration, time) {
+  if (typeof velocity !== 'number' || typeof acceleration !== 'number' || typeof time !== 'number') {
+      throw new Error('Invalid input: velocity, acceleration, and time must be numbers');
+  }
+  return velocity + (acceleration * time);
+}
+
 
 const d2 = d + (vel*time) //calcultes new distance
 const rf = fbr*time //calculates remaining fuel
