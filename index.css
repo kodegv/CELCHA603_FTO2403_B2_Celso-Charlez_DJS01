@@ -1,4 +1,3 @@
-/* Reset some default styles for the page */
 body, p {
     margin: 0;
     padding: 0;
@@ -15,11 +14,10 @@ body {
     align-items: center; /* Center vertically */
 }
 
-/* Style the h1 element */
 h1 {
     font-weight: bold;
     font-size: 50px; /* Make it big */
-    text-align: center;
+    text-align: center; /* Center */
     color: rgb(218, 204, 48); /* Change text color */
     font-family: 'Comic Sans MS', cursive, sans-serif; /* A cartoony font */
     text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.454); /* Add a slight shadow for a cool effect */
@@ -27,7 +25,6 @@ h1 {
     margin-bottom: 20px; /* Add some space below the h1 element */
 }
 
-/* Style the GIF image */
 .centered-gif {
     border-radius: 15px; /* Make the border rounded */
     border: 5px solid rgba(255, 255, 255, 0.5); /* Add a semi-transparent border */
