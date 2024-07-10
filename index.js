@@ -28,6 +28,9 @@ function calcNewVelocity(velocity, acceleration, time) {
 const newVelocityMs = calcNewVelocity(initialVelocityMs, accelerationMs2, timeSeconds);
 const newVelocityKmH = newVelocityMs * (3600 / 1000);
 
+// Calculate new distance in km
+const newDistanceKm = initialDistanceKm + (initialVelocityKmH * (timeSeconds / 3600));
+
 
 const d2 = d + (vel*time) //calcultes new distance
 const rf = fbr*time //calculates remaining fuel
