@@ -6,14 +6,11 @@ body, p {
 }
 
 body {
-    background-image: url('mars.gif');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; /* Center the background image */
-    /* background-attachment: fixed; Optional: Keeps the background fixed */
+    background: linear-gradient(to bottom right, blue, orange); /* Blue and orange gradient background */
     height: 100vh; /* Make the background fill the entire viewport height */
     overflow: hidden; /* Hide any overflow content */
-    display: flex; /* Use flexbox to center the h1 vertically and horizontally */
+    display: flex; /* Use flexbox to center the content vertically and horizontally */
+    flex-direction: column; /* Arrange the content in a column */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
 }
@@ -21,11 +18,19 @@ body {
 /* Style the h1 element */
 h1 {
     font-weight: bold;
-    font-size: 50px;
+    font-size: 50px; /* Make it big */
     text-align: center;
-    color: black; 
-    font-family: 'Comic Sans MS', cursive, sans-serif; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
-    letter-spacing: 2px; 
+    color: rgb(218, 204, 48); /* Change text color */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* A cartoony font */
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.454); /* Add a slight shadow for a cool effect */
+    letter-spacing: 2px; /* Add some spacing between the letters */
+    margin-bottom: 20px; /* Add some space below the h1 element */
 }
 
+/* Style the GIF image */
+.centered-gif {
+    border-radius: 15px; /* Make the border rounded */
+    border: 5px solid rgba(255, 255, 255, 0.5); /* Add a semi-transparent border */
+    max-width: 90%; /* Ensure the GIF doesn't overflow the viewport */
+    max-height: 50vh; /* Ensure the GIF doesn't overflow the viewport */
+}
